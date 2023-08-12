@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Number Input</title>
+    <style>
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+        #phone-prefix {
+            width: 30px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #f5f5f5;
+            font-weight: bold;
+            pointer-events: none;
+            user-select: none;
+        }
+        #phone-number {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-container">
+        <div id="phone-prefix">+91</div>
+        <input type="tel" id="phone-number"  placeholder="Enter 10-digit number">
+    </div>
+
+    <script>
+        const phoneNumberInput = document.getElementById('phone-number');
+
+        phoneNumberInput.addEventListener('input', function () {
+            // Remove any non-numeric characters
+            this.value = this.value.replace(/\D/g, '');
+
+            // Limit input to 10 characters
+            if (this.value.length > 10) {
+                this.value = this.value.slice(0, 10);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        .contanier{
+            background-color: aqua;
+        }
+        div > p{ /* Afting the direct component. */
+            color:red;
+            background-color:green;
+        }
+        li{
+            color: black;
+        }
+
+        ul + p{
+            /* Applying on the sibling of p. */
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="row">
+            <ul>
+
+                <li><p>this is p </p></li>
+            </ul>
+            
+            <p>this is inner p</p>
+        </div>
+        <p> after the row</p>
+    </div>
+    <p> out most p</p>
+</body>
+</html>

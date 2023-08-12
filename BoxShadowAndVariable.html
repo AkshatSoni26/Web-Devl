@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow And Variable Custom properties</title>
+    <style>
+        :root{
+            --primary-background : aqua;
+            --secondary-background : red;
+        }
+
+        .contanier{
+            display: flex;
+            
+        }
+        .box{
+            background-color:var(--primary-background);
+            width: 100px;
+            height: 100px;
+            margin: 5px 10px;
+            box-shadow: 5px 5px 10px var(--secondary-background);
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="contanier">
+      <div class="box"  id="item-1">First</div>
+      <div class="box"  id="item-2">second</div>
+      <div class="box"  id="item-3">Third</div>
+      <div class="box"  id="item-4">Four</div>
+    </div>
+    
+  </body>
+
+  </html>

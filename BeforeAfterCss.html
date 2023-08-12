@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After css Prop</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        
+        header::before{
+            content: '';
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            /* opacity: .5; */
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: .5 ;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+        .contanier{
+            display: flex;
+            
+        }
+        li{
+            list-style: none;
+            margin: 20px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="contanier">
+        <li id="item-1">Home</li>
+        <li id="item-2">About</li>
+        <li id="item-3">Section</li>
+        <li id="item-4">Testimonails</li>
+    </header>
+    <section>
+        <h1>this is Pratise of the css</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in quam temporibus dolorum minima, incidunt commodi nostrum veritatis aspernatur cum consequuntur reiciendis soluta perferendis. Molestiae neque officiis ullam esse beatae.
+
+        </p>
+    </section>
+    <hr>
+</body>
+</html>

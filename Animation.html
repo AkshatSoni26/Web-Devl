@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .upper_cont {
+        background-color: rgb(227, 172, 71);
+      }
+
+      .contanier {
+        width: 100px;
+        height: 100px;
+        background-color: wheat;
+        position: relative;
+        animation: loader 4s 2 alternate ease-in-out;
+      }
+
+      @keyframes animi {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 250px;
+          left: 0px;
+        }
+        75% {
+          top: 250px;
+          left: 250px;
+        }
+        100% {
+          top: 0px;
+          left: 250px;
+        }
+      }
+
+      @keyframes loader {
+        from {
+          width: 200px;
+        }
+        to {
+          width: 1000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="upper_cont">
+      <div class="contanier animi">this is animation</div>
+    </div>
+  </body>
+</html>

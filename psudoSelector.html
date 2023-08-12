@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSudo selector</title>
+    <style>
+        div[id='item-5']{
+            color:red;
+            font-size: 10rem;
+        }
+        div:nth-child(3){
+            background-color:yellowgreen
+        }
+        div:nth-child(2n+1){
+            background-color:rgb(186, 21, 117)
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="item-1">item-1</div>
+    <div class="container" id="item-2">item-2</div>
+    <div class="container" id="item-3">item-3</div>
+    <div class="container" id="item-4">item-4</div>
+    <div class="container" id="item-5">item-5</div>
+    
+</body>
+</html>
